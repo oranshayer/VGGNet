@@ -1,0 +1,8 @@
+This is a Tensorflow implementation of VGG Net.
+The architecture follows the 16-layer architecture (vgg16) from the original paper:
+https://arxiv.org/pdf/1409.1556.pdf
+
+The default is to load pre-trained weights. To change this option, change the value of the flag named "use_pre_trained" under VGGNet_train.py.
+If not using the pre-trained weights, initial learning rate should be increased (usually starting from 0.01).
+
+The classification layer follows the labeling order that is defined in the file ImageNet_classes.txt. This is not the same ordering as in the original ILSVRC2012 devkit.
